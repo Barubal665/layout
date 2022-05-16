@@ -1,0 +1,499 @@
+*{ 
+  padding: 0;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+:root{
+
+  --body--color: #E4E9F7;
+  --sidebar-color: #FFF;
+  --primary-color: #36a8ff;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: #000;
+  }
+
+#rightSideWrapper {
+/*Strictly Necessary */
+width:80%; 
+float: right;
+
+/*Aesthetics*/
+
+}
+
+header {
+/*Strictly Necessary */
+  /*Strictly Necessary */
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  /*Adjust the hight to your purposes*/
+  /*Aesthetics*/
+  background: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.12), 0 2px 0px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+
+}
+
+h1{
+ 
+  justify-content: center;
+  display: flex;
+  margin-left: 35%;
+ 
+}
+
+
+
+.ContentBox{
+	margin-top: 100px; /*The height of the   header*/
+	display:flex;
+	flex-flow: wrap;
+   
+    
+} 
+
+main {
+    /*Aesthetics*/
+	  padding: 20px;
+     z-index: 1;
+     display: flex;
+     justify-content: space-between;
+     order: 1;
+     flex: 0 1 100%; 
+     	flex-flow: wrap;
+}
+/* section {
+ height: 400px;
+ order: 2;
+ flex: 0 1 100%;
+
+}
+footer {
+
+height: 100px;
+order: 3;
+flex: 0 1 100%;
+
+} */
+
+/* card */
+body {
+  text-align: center;
+  background-color: var(--body--color);
+  background-image: url("/css/images/pisobg.png");
+}
+body 
+.card {
+  background: whitesmoke;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: .7rem;
+  position: relative;
+  width: 300px;
+  
+}
+img {
+
+  width: 10rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-1, .card-2, .card-3{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 5px;
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-2:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-3:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #144a9a;
+  transition: all .5s ease;
+}
+  #sidebar .image img{
+    padding-top: 15px;
+    width: 10rem;
+    border-radius: 6px;
+  }
+
+
+#sidebar li{
+  height: 50px;
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+ 
+ 
+}
+#sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+
+#sidebar li a:hover{
+  background: var(--primary-color);
+  
+}
+
+#sidebar li a:hover .icon,
+#sidebar li a:hover .text{
+  color: #144a9a;
+  transition: all 0.2s ease;
+}
+
+#sidebar li .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 65px;
+  font-size: 30px;
+  padding-left: 5px;
+  
+}
+
+#sidebar .icon{
+    color: white;
+}
+
+#sidebar .text{
+    color: white;
+}
+
+#sidebar li a:hover{
+  background: var(--primary-color);
+}
+
+.sidebar .text{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all .5s ease;
+  white-space: nowrap;
+}
+
+.Card1 {
+  position: relative;
+  background: #fff;
+  text-align: left;
+  overflow: hidden;
+  font-size: 10px;
+  border-radius: 3px;
+  height: 260px;
+  margin-bottom: 40px;
+  padding: 1em;
+  width: 200px;
+  box-shadow:  5px 5px 3px #bababa,
+           -5px -5px 3px #ffffff;
+}
+
+
+
+.Card1 .details {
+  -moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;transition: 0.5s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  list-style: none;
+  margin: 0px;
+  padding: 1em;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 40%;
+}
+.Card1:hover .details {left: 0px;}
+.Card1:hover .details li{padding: 0.1em;}
+
+.Card1 .description{
+
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.Card1 .description h1 {
+  font-size: 1.6em;
+  padding: 0px;
+  font-weight: bold;
+  margin: 0;
+
+}
+.Card1 .description .line {display: block;height: 5em;}
+.Card1 .description .product_name {float: left;}
+.Card1 .description .product_price {float: right;color:#4cbc32;}
+.Card1 .description h2 {
+  color: gray;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.Card1 .description p {position: relative;padding: 2em 0px 1em 0.5em;}
+
+.Card1 .description p:after {
+  content: "";
+  background: gray;
+  height: 1px;
+  width: 20em;
+  position: absolute;
+  top: 0.6em;
+  left: 0px;
+}
+.Card1 .description a {
+  color: blue;
+  margin-bottom: 1em;
+  position: absolute;
+  right:0em;
+  bottom: 0em; 
+  font-size: 1em;
+}
+
+.bx{
+  color:black;
+  font-size: 40px;
+  font-weight: 0.5em;
+  
+}
+
+.Card1 .description a:after {
+  content: ">";
+  margin-left: -10px;
+  opacity: 0;
+  -moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;transition: 0.5s;
+}
+.Card1 .description a:hover:after {margin-left: 5px;opacity: 1;}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 25px;
+
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid gray;
+  border-right: none;
+  padding: 15px;
+  height: 30px;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.bx-search {
+  color: black;
+  font-size: 20px;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 33px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 6px;
+  
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  width: 950px;
+  border-collapse: collapse;
+  margin: 50px auto;
+  background-color: white;
+
+}
+
+
+
+th {
+  background: #144a9a;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+  table {
+    width: 100%;
+  }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid white;
+  }
+
+  td {
+    /* Behave  like a "row" */
+
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}
+  
+#usertable{
+    width: 80%;
+    margin: 30px 30px;
+    background: rgb(124,154,167);
+}
+
+#usertable .list{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+#useradd{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 8px 15px;
+    
+}
+
+tr:nth-child(even), .table .list thread> tr{
+    background-color: rgb(204,200,200);
+}
+
+input[type="text"],input[type="number"]{
+    width:100%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+    
+}
+
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:10px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+
+button{
+    background: #eee;
+    padding:6px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
+}
